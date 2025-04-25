@@ -50,3 +50,11 @@ export const deletePersonaje = async (id) => {
     }
     return { message: 'Personaje eliminado exitosamente' };
 };
+
+export async function getPersonajes() {
+    const response = await fetch('https://humble-space-sniffle-r46qrx9jvpg939rw-5000.app.github.dev/personajes'); // Ajusta la URL según tu backend
+    if (!response.ok) {
+      throw new Error('No se pudieron obtener los personajes');
+    }
+    return await response.json();
+  }

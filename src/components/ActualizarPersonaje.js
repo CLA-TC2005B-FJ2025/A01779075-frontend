@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getPersonajeById, updatePersonaje } from '../api';
 
+
 function ActualizarPersonaje() {
     const [idActualizar, setIdActualizar] = useState('');
     const [personaje, setPersonaje] = useState(null);
