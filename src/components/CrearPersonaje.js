@@ -40,7 +40,7 @@ function CrearPersonaje() {
                     <input type="email" name="email" value={nuevoPersonaje.email} onChange={handleChange} required />
                 </div>
                 <div>
-                    <label>Email:</label>
+                    <label>Whatsapp:</label>
                     <input type="whatsapp" name="whatsapp" value={nuevoPersonaje.whatsapp} onChange={handleChange} required />
                 </div>
                 <button type="submit">Crear Personaje</button>
